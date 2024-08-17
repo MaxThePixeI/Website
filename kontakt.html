@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="index.html"><i class="fa fa-home"></i> Hjem</a></li>
+            <li><a href="projekter.html"><i class="fa fa-briefcase"></i> Projekter</a></li>
+            <li><a href="kontakt.html"><i class="fa fa-envelope"></i> Kontakt</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <header>
+            <h1>Kontakt os</h1>
+        </header>
+        <section id="kontakt">
+            <h2>Kontaktformular</h2>
+            <p>Udfyld formularen nedenfor for at kontakte os:</p>
+            <form action="send-form.php" method="post">
+                <label for="name">Navn:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Besked:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send besked</button>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2024 Min Simple Hjemmeside</p>
+        </footer>
+    </div>
+    <div id="loading" class="spinner"></div>
+    <div class="floating-buttons">
+        <button class="floating-btn">Kontakt os</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
